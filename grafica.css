@@ -1,6 +1,12 @@
 html,body{height:100%;}
 body{background: #eee;}
 
+.animate{
+	-webkit-transition: all 0.3s ease-out;
+					transition: all 0.3s ease-out;
+}
+
+
 .header{background: #333}
 .header__logo{color:#fff; float:left;display: block;padding:20px;text-decoration: none;}
 .header__menu{float:right;margin:0; padding:0;}
@@ -12,18 +18,14 @@ body{background: #eee;}
 
 h1 {
   color: black;
-
   border: 1px solid black;
 }
 
 p {
-  color: #000
-  ;
+  color: #fff;
 }
 
-p, li {
-  text-decoration: underline;
-}
+
 
 
 .footer{background: #333; padding:30px;color:#fff; margin-top: 40px}
