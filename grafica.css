@@ -1,4 +1,4 @@
-html,body{height: 100%}
+html,body{height:100%}
 body{background: #eee;}
 
 .animate{
@@ -16,19 +16,20 @@ body{background: #eee;}
 .header__icon-bar{display: block;float: right;padding:20px;display: none;}
 .header__icon-bar span{display: block;height:3px; width: 30px;background: #fff; margin-bottom: 5px;}
 
-.cover{height:60%;
-	background-image:  url("sfondo.jpg");
+.cover{height:70%;
+	background-image: url("sfondo.jpg");
 	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
 	background-position: center center;
 	position:relative;
 }
-.cover__filter{ background: #000; width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.3; }
+.cover__filter{ background: #000; width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.5; }
 .cover__caption{ display: table; height: 100%; width:100%; position: relative; z-index:1; padding: 0 20px}
 .cover__caption__copy{ display: table-cell; vertical-align: middle; text-align: center; color:#fff; }
 
-
 .cover--single{height: 50%}
-.cover--single h1{font-size: 72px;}
+.cover--single h1{font-size: 100px;}
 
 h1 {color: white;
 	font-size: 100px;
@@ -43,18 +44,55 @@ p {color: #fff;}
 
 
 
+/*-----------------------------
+Banner
+-----------------------------*/
+.banner{background: #fff; height:50%;margin-top:40px}
+.banner__image{width:30%; float:left;height:100%;
+	background-image: url("https://source.unsplash.com/category/nature/400x400");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+}
+.banner__copy{width:70%; float:left;height:100%;display: table;}
+.banner__copy__text{display: table-cell; vertical-align: middle;padding:30px;}
+
+.banner__copy__text h3{font-size: 36px;margin-bottom:0;}
+.banner__copy__text h4{font-size: 22px;margin: 5px 0}
+
+
+/*-----------------------------
+Footer
+-----------------------------*/
+
 .footer{background: #333; padding:30px;color:#fff; margin-top: 40px}
 
 
-/*-regole per visualizzazione da tablet*/
+/*-----------------------------
+Single
+-----------------------------*/
+.panel{}
+.panel__copy{max-width: 800px; margin: 0px auto; margin-top: -60px; background: #fff; padding:20px 40px;position: relative; z-index: 1}
+.panel__copy__meta{font-weight: bold;font-size: 16px;	}
+.panel__copy__title{font-size: 32px;}
+
+
+/*-----------------------------
+Tablet
+-----------------------------*/
 @media (max-width: 998px){
 	/* banner */
 	.banner__image,
 	.banner__copy{width:50%;height:100%}
+
 }
 
-/*-regole per visualizzazione da smartphone-*/
-@media (max-width: 750px){
+
+/*-----------------------------
+Smartphone
+-----------------------------*/
+@media (max-width: 767px){
 
 	.header{position:fixed; z-index: 100;width:100%}
 	.header__icon-bar{display: block;}
@@ -66,16 +104,19 @@ p {color: #fff;}
 	/* Cover */
 	.cover{height:100%;}
 
-
+	/* Cards */
+	.card{width: 90%; margin:5%; }
 
 	/* Banner */
 	.banner{height: 600px;}
 	.banner__image,
 	.banner__copy{width:100%;height:50%}
+
 }
 
 
-/* strumento per sistemare problemi banner */
+/* clearfix */
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
