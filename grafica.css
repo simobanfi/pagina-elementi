@@ -84,7 +84,7 @@ Tablet
 /*-----------------------------
 Smartphone
 -----------------------------*/
-@media (max-width: 750px){
+@media (max-width: 767px){
 
 	.header{position:fixed; z-index: 100;width:100%}
 	.header__icon-bar{display: block;}
