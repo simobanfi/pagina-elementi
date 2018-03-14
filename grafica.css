@@ -17,7 +17,7 @@ body{background: #eee;}
 .header__icon-bar span{display: block;height:3px; width: 30px;background: #fff; margin-bottom: 5px;}
 
 .cover{height:70%;
-	background-image: url("sfondo.jpg");
+	background-image: url("sfondo.JPG");
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
