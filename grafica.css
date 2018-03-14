@@ -1,4 +1,4 @@
-html,body{height:100%;}
+html,body{height: 100%}
 body{background: #eee;}
 
 .animate{
@@ -16,14 +16,29 @@ body{background: #eee;}
 .header__icon-bar{display: block;float: right;padding:20px;display: none;}
 .header__icon-bar span{display: block;height:3px; width: 30px;background: #fff; margin-bottom: 5px;}
 
-h1 {
-  color: black;
-  border: 1px solid black;
+.cover{height:60%;
+	background-image:  url("sfondo.jpg");
+	background-size: cover;
+	background-position: center center;
+	position:relative;
 }
+.cover__filter{ background: #000; width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.3; }
+.cover__caption{ display: table; height: 100%; width:100%; position: relative; z-index:1; padding: 0 20px}
+.cover__caption__copy{ display: table-cell; vertical-align: middle; text-align: center; color:#fff; }
 
-p {
-  color: #fff;
+
+.cover--single{height: 50%}
+.cover--single h1{font-size: 72px;}
+
+h1 {color: white;
+	font-size: 100px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+h2 {color: white;}
+
+p {color: #fff;}
 
 
 
@@ -51,8 +66,7 @@ p {
 	/* Cover */
 	.cover{height:100%;}
 
-	/* Cards */
-	.card{width: 90%; margin:5%; }
+
 
 	/* Banner */
 	.banner{height: 600px;}
@@ -63,15 +77,20 @@ p {
 
 /* strumento per sistemare problemi banner */
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
