@@ -1,11 +1,7 @@
 
-
-h1 {color: black;
+h1 {
 	font-size: 100px;
 	font-weight: 100;
 	letter-spacing: 1px;
 	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-h2 {color: black;}
-
-p {color: black;}
