@@ -18,7 +18,8 @@ html, body{
 }
 
 /*--- correzioni cover --*/
-.cover{height:90%;
+.cover{
+  height:90%;
 	background-image: url("img/pp.jpg");
 	background-size: cover;
 	background-position: center center;
