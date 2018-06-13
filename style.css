@@ -20,7 +20,7 @@ html, body{
 /*--- correzioni cover --*/
 .cover{
   height:90%;
-	background-image: url("img/pp.jpg");
+	background-image: url("img/pp.png");
 	background-size: cover;
 	background-position: center center;
 	position:relative;
