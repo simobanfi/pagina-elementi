@@ -7,9 +7,6 @@ html, body{
  }
 
 /*--- correzioni navbar --*/
-.navbar{
-  padding: .8rem;
-}
 .navbar-nav li{
   padding-right: 10px;
 }
@@ -19,13 +16,12 @@ html, body{
 
 /*--- correzioni cover --*/
 .cover{
-  height:90%;
+  height:100%;
 	background-image: url("img/pp.png");
 	background-size: cover;
 	background-position: center center;
 	position:relative;
   }
-.cover-filter{ background: #000; width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.3; }
 .cover-caption{ display: table; height: 100%; width:100%; position: relative; z-index:1; padding: 0 20px}
 .cover-caption-copy{ display: table-cell; vertical-align: middle; text-align: center; color:#fff; }
 
@@ -57,36 +53,16 @@ html, body{
   margin: 1rem;
  }
 
- /*--- correzioni carousel foto --*/
-.carousel-inner img{
-  width: 100%;
-
-}
-.carousel-caption{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-caption h1{
-  font-size: 500%;
-  text-transform: uppercase;
-}
-.carousel-caption h3{
-  font-size: 200%;
-  font-weight: 500;
-  padding-bottom: 1rem;
-}
-
 .padding {
   padding-bottom: 2rem;
 }
 
-.frase{
-  background-color: #2163af;
-  color: white;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 2rem;
+/*--- correzioni modal musica --*/
+.modal-content {
+  width: 303px;
+  height: 57px;
+  padding: 0px;
+  border-radius: 28px;
 }
 
 /*--- correzioni sezione social --*/
@@ -109,13 +85,12 @@ html, body{
   color: #d5d5d5;
 }
 
-/*--- correzioni navbar --*/
+/*--- correzioni Footer --*/
 footer{
   background-color: #3f3f3f;
   color: #d5d5d5;
   padding-top: 2rem;
 }
-
 
 
 
@@ -127,20 +102,6 @@ footer{
  }
   }
 @media (max-width: 768px) {
-  .carousel-caption{
-    top: 45%;
-  }
-  .carousel-caption h1{
-    font-size: 350%;
-  }
-  .carousel-caption h3{
-    font-size: 140%;
-    font-weight: 400;
-    padding-bottom: .2rem;
-  }
-  .carousel-caption .btn{
-    font-size: 95%;
-  }
   .display-4 {
     font-size: 200%;
   }
@@ -150,21 +111,6 @@ footer{
   }
 }
 @media (max-width: 576px) {
-  .carousel-caption{
-    top: 40%;
-  }
-  .carousel-caption h1{
-    font-size: 250%;
-  }
-  .carousel-caption h3{
-    font-size: 110%;
-  }
-  .carousel-caption .btn{
-    font-size: 90%;
-  }
-  .carousel-indicators{
-    display: none;
-  }
   .display-4 {
     font-size: 160%;
   }
@@ -173,7 +119,6 @@ footer{
     padding: .7rem;
   }
 }
-
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
@@ -212,32 +157,10 @@ figure {
           transform: translateZ(0);
   will-change: transform;
 }
-
-overlay {
-    background: rgba(64, 35, 97, 0.9);
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    -moz-transition: opacity, 0.3s;
-    -o-transition: opacity, 0.3s;
-    -webkit-transition: opacity, 0.3s;
-    transition: opacity, 0.3s; }
-  .work .overlay-caption {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
-
-
-
-
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
